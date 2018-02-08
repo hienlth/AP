@@ -18,11 +18,11 @@ Ví dụ:
 > int\* pa; // con trỏ đến kiểu int
 >
 > DIEM \*pd; // con trỏ đến kiểu DIEM
->
-> Toán tử **&**: dùng để xác định địa chỉ của một ô nhớ:
->
-> Ví dụ:
->
+
+Toán tử **&**: dùng để xác định địa chỉ của một ô nhớ:
+
+Ví dụ:
+
 > int a = 1;
 >
 > int\* pa = &a;// con trỏ trỏ đến ô nhớ của biến a
@@ -31,17 +31,17 @@ Ví dụ:
 
 Sử dụng toán tử new
 
-Ví dụ:
+_**Ví dụ:**_
 
-int\* pInt = new int; // xin cấp phát vùng nhớ cho 1 số nguyên
-
-DIEM \*pDiem = new DIEM;  // xin cấp phát vùng nhớ cho 1 biến kiểu cấu trúc DIEM
+> int\* pInt = new int; // xin cấp phát vùng nhớ cho 1 số nguyên
+>
+> DIEM \*pDiem = new DIEM;  // xin cấp phát vùng nhớ cho 1 biến kiểu cấu trúc DIEM
 
 Toán tử new còn có thể sử dụng thể cấp phát vùng nhớ cho nhiều phần tử.
 
-int\* arr = new int\[5\]; // xin cấp phát vùng nhớ cho 5 số nguyên
+> int\* arr = new int\[5\]; // xin cấp phát vùng nhớ cho 5 số nguyên
 
-Lưu ý:
+_**Lưu ý:**_
 
 Để kiểm tra cấp phát vùng nhớ thành công hay không, ta dùng con trỏ đặc biệt NULL.
 
@@ -49,19 +49,19 @@ NULL là con trỏ đặc biệt, có thể được gán cho các biến con tr
 
 Ví dụ: Cả 2 con trỏ sau đây đều hợp lệ.
 
-int\* pInt = NULL;
-
-DIEM\* pDiem = NULL;
+> int\* pInt = NULL;
+>
+> DIEM\* pDiem = NULL;
 
 Để kiểm tra cấp phát thành công, ta làm như sau:
 
-DIEM\* pDiem = NULL; // khai báo con trỏ và gán bằng NULL
-
-pDiem = new DIEM; // xin cấp phát vùng nhớ
-
-if \(pDiem == NULL\)// nếu pDiem vẫn bằng NULL thì xin cấp phát không thành công
-
-cout&lt;&lt;“Cap phat khong thanh cong”;
+> DIEM\* pDiem = NULL; // khai báo con trỏ và gán bằng NULL
+>
+> pDiem = new DIEM; // xin cấp phát vùng nhớ
+>
+> if \(pDiem == NULL\)// nếu pDiem vẫn bằng NULL thì xin cấp phát không thành công
+>
+> cout&lt;&lt;“Cap phat khong thanh cong”;
 
 ## 1.3. Truy xuất giá trị ô nhớ từ biến con trỏ
 
@@ -73,13 +73,13 @@ Ví dụ:
 
 Với khai báo các biến a, pa:
 
-int a = 1;
-
-int\* pa = &a; // con trỏ trỏ đến ô nhớ của biến a
+> int a = 1;
+>
+> int\* pa = &a; // con trỏ trỏ đến ô nhớ của biến a
 
 câu lệnh
 
-cout&lt;&lt;\*pa;
+> cout&lt;&lt;\*pa;
 
 sẽ xuất ra “1”.
 
@@ -91,19 +91,17 @@ Ví dụ:
 
 Với kiểu cấu trúc DIEM được định nghĩa như sau
 
-struct DIEM
+> struct DIEM
+>
+> {
+>
+> int hoanhDo, tungDo;
+>
+> } ;
+>
+> DIEM \*pDiem = new DIEM;
 
-{
-
-int hoanhDo, tungDo;
-
-} ;
-
-DIEM \*pDiem = new DIEM;
-
-Để truy xuất thành phần dùng
-
-pDiem-&gt;hoanhDo và pDiem-&gt;tungDo
+Để truy xuất thành phần dùng: **pDiem-&gt;hoanhDo** và **pDiem-&gt;tungDo**
 
 ## 1.4. Hủy vùng nhớ đã xin cấp phát
 
@@ -111,65 +109,65 @@ pDiem-&gt;hoanhDo và pDiem-&gt;tungDo
 
 Ví dụ đã khai báo 2 con trỏ pa, pb như sau:
 
-int\* pa = new int;
-
-int\* pb = new int\[5\];
+> int\* pa = new int;
+>
+> int\* pb = new int\[5\];
 
 thì cách hủy tương ứng sẽ là:
 
-delete pa;
+> delete pa;
+>
+> delete pb\[\];
 
-delete pb\[\];
+## 1.5 Ví dụ Con trỏ cơ bản
 
-## Bài tập mẫu – Con trỏ cơ bản
-
-struct DIEM
-
-{
-
-int hoanhDo, tungDo;
-
-} ;
-
-void main\(\)
-
-{
-
-// khoi tao cac bien gia tri
-
-int a = 1;
-
-DIEM d;
-
-d.hoanhDo = 1;
-
-d.tungDo = 2;
-
-// khai bao bien con tro va tro den vung nho cua cac bien gia tri da co
-
-int \*pa = &a;
-
-int \*pb = pa;
-
-DIEM \*pd = &d;
-
-// xac dinh dia chi o nho: toan tu &
-
-cout&lt;&lt;"Dia chi o nho:"&lt;&lt;&a&lt;&lt;endl;
-
-// truy xuat gia tri o nho tu bien con tro: toan tu \*
-
-cout&lt;&lt;"Gia tri a:"&lt;&lt; \*pa&lt;&lt;endl;
-
-// truy xuat thanh phan trong cau truc
-
-cout&lt;&lt;"Diem D: \("&lt;&lt; d.hoanhDo &lt;&lt; “, “&lt;&lt; d.tungDo “\)”;//doi voi bien gia tri: .
-
-cout&lt;&lt;"Diem D: \("&lt;&lt; pd-&gt;hoanhDo &lt;&lt; ”,” &lt;&lt; pd-&gt;tungDo &lt;&lt;”\)”;// doi voi bien con tro: -&gt;
-
-delete pd;
-
-}
+> struct DIEM
+>
+> {
+>
+> int hoanhDo, tungDo;
+>
+> } ;
+>
+> void main\(\)
+>
+> {
+>
+> // khoi tao cac bien gia tri
+>
+> int a = 1;
+>
+> DIEM d;
+>
+> d.hoanhDo = 1;
+>
+> d.tungDo = 2;
+>
+> // khai bao bien con tro va tro den vung nho cua cac bien gia tri da co
+>
+> int \*pa = &a;
+>
+> int \*pb = pa;
+>
+> DIEM \*pd = &d;
+>
+> // xac dinh dia chi o nho: toan tu &
+>
+> cout&lt;&lt;"Dia chi o nho:"&lt;&lt;&a&lt;&lt;endl;
+>
+> // truy xuat gia tri o nho tu bien con tro: toan tu \*
+>
+> cout&lt;&lt;"Gia tri a:"&lt;&lt; \*pa&lt;&lt;endl;
+>
+> // truy xuat thanh phan trong cau truc
+>
+> cout&lt;&lt;"Diem D: \("&lt;&lt; d.hoanhDo &lt;&lt; “, “&lt;&lt; d.tungDo “\)”;//doi voi bien gia tri: .
+>
+> cout&lt;&lt;"Diem D: \("&lt;&lt; pd-&gt;hoanhDo &lt;&lt; ”,” &lt;&lt; pd-&gt;tungDo &lt;&lt;”\)”;// doi voi bien con tro: -&gt;
+>
+> delete pd;
+>
+> }
 
 ## 1.5. Con trỏ với mảng \(cấp phát mảng động\)
 
