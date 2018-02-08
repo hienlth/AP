@@ -1,3 +1,4 @@
-# My Awesome Book
+# GIỚI THIỆU
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+Tài liệu này là danh sách bài tập hướng dẫn thực hành trên lớp môn Lập trình nâng cao tại Khoa Công nghệ Thông tin, Đại học Sư phạm TP. Hồ Chí Minh của cá nhân tác giả.
+
