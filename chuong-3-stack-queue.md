@@ -39,7 +39,7 @@ Các hàm thành viên của lớp queue:
 
 ### Bài tập 2:
 
-Cài đặt chương trình định giá trị của một biểu thức toán học thông thường \(ở dạng trung tố - Infix\). Trong đó, Biểu thức toán học bao gồm các số nguyên không âm \(&gt;= 0\), các phép toán + - \* / \(cộng, trừ, nhân và chia\) và dấu ngoặc \( \).
+Cài đặt chương trình định giá trị của một biểu thức toán học thông thường \(ở dạng trung tố - Infix\). Trong đó, biểu thức toán học bao gồm các số nguyên không âm \(&gt;= 0\), các phép toán + - \* / \(cộng, trừ, nhân và chia\) và dấu ngoặc \( \).
 
 Ví dụ:
 
