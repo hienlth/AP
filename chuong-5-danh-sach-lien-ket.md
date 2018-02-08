@@ -26,11 +26,11 @@ Cài đặt danh sách liên kết đơn với mỗi node có kiểu dữ liệu
 
 ## Bài tập 2:
 
-Sử dụng danh sách liênkết để biểu diễn 2 tập hợp A, Bgồmm,n phần tử:
+Sử dụng danh sách liên kết để biểu diễn 2 tập hợp **A, B** gồm **m,n** phần tử:
 
-1. Xuất ra những phần tử có trong A mà khôngcó trong B.
-2. Tìm\(ghép A, B thành C sao cho C không cóphầntử trùng nhau\).
-3. Tìm tập giao của 2 tập hợp.
+1. Xuất ra những phần tử có trong A mà không có trong B.
+2. Tìm C = A U B \(ghép A, B thành C sao cho C không có phầntử trùng nhau\).
+3. Tìm tập giao của 2 tập hợp D = A  giao B
 
 ## Bài tập 3:
 
@@ -38,7 +38,11 @@ Viết chương trình tổng, hiệu của 2 số nguyên lớn tối đa 32 ch
 
 ## Bài tập 4:
 
-Khai báo danh sách liên kết đơn để biểu diễn đa thức. Cài đặt các thao tác sau trên đa thức:
+Khai báo danh sách liên kết đơn để biểu diễn đa thức. 
+
+![](/assets/dslkbt04.PNG)
+
+Cài đặt các thao tác sau trên đa thức:
 
 1. In đa thức
 2. Tính giá trị đa thức
@@ -47,4 +51,6 @@ Khai báo danh sách liên kết đơn để biểu diễn đa thức. Cài đ�
 5. Nhân hai đa thức.
 
 
+
+[^1]: Enter footnote here.
 
