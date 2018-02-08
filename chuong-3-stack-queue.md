@@ -14,8 +14,6 @@ Các hàm thành viên của lớp stack:
 | push\(&lt;T&gt;\) | Đưa một phần tử vào stack | void |
 | pop\(\) | Xóa phần tử ở đỉnh stack | void |
 
-
-
 ## 2. Queue
 
 Queue \(first in, first out – FIFO\): phần tử vào queue trước nhất, là phần tử được lấy ra khỏi queue trước nhất.
@@ -28,12 +26,8 @@ Các hàm thành viên của lớp queue:
 | size\(\) | Trả về số phần tử trong queue | size\_type |
 | front | Trả về giá trị phần tử đầu queue | &lt;T&gt; |
 | back | Trả về giá trị phần tử cuối queue | &lt;T&gt; |
-| push\(&lt;T&gt;\) | Thêm một phần tử vào cuối queue | void |
-|  |  | push\_back\(T\) |
-| pop\(\) | Xóa phần tử đầu queue | void |
-|  |  | pop\_front\(\) |
-
-
+| push\(&lt;T&gt;\) | Thêm một phần tử vào cuối queue | void push\_back\(T\) |
+| pop\(\) | Xóa phần tử đầu queue | void pop\_front\(\) |
 
 ## 3. Bài tập
 
@@ -75,73 +69,71 @@ oNếu stack không rỗng, và còn toán tử t2 ở đỉnh ngăn xếp mà �
 
 function INFIXTOPOSTFIX \(Expression P\) return Expression Q
 
- Khai báo biến ngăn xếp S
+Khai báo biến ngăn xếp S
 
 while \(chưa hết biểu thức P\)
 
- Lấy 1 kí tự x trong P \(theo thứ tự trái qua phải\)
+Lấy 1 kí tự x trong P \(theo thứ tự trái qua phải\)
 
 if \(x là số\)
 
- Thêm x vào Q
+Thêm x vào Q
 
 if \(x là dấu mở ngoặc\)
 
- S.Push\(x\)
+S.Push\(x\)
 
 if \(x là toán tử\)
 
 while\( thứ tự ưu tiên S.TOP\(\) &gt;= x\)
 
- w &lt;- S.POP \(\)
+w &lt;- S.POP \(\)
 
- Thêm w vào Q
+Thêm w vào Q
 
- S.Push\(x\)
+S.Push\(x\)
 
 if \(x là dấu đóng ngoặc ‘\)’ \)
 
 while\(chưa gặp dấu mở ngoặc ‘\(‘ \)
 
- w &lt;- S.POP \(\)
+w &lt;- S.POP \(\)
 
- Thêm w vào Q
+Thêm w vào Q
 
- S.POP \(\)//đẩy mở ngoặc ra khỏi stack
+S.POP \(\)//đẩy mở ngoặc ra khỏi stack
 
- while\(! S.IsEmpty\(\)\)
+while\(! S.IsEmpty\(\)\)
 
- w &lt;- S.POP \(\)
+w &lt;- S.POP \(\)
 
- if\(w không là mở ngoặc\)
+if\(w không là mở ngoặc\)
 
- Thêm w vào Q
+Thêm w vào Q
 
 **Bước 2:**Định giá trị biểu thức:
 
 function CALCULATEPOSTFIX \(Expression Q\) return value
 
- Khai báo biến ngăn xếp S
+Khai báo biến ngăn xếp S
 
- foreach chuỗi x trong biểu thức Q do
+foreach chuỗi x trong biểu thức Q do
 
- if\(x là số\)
+if\(x là số\)
 
- S.Push\(x\)
+S.Push\(x\)
 
- if \(x là toán tử\)
+if \(x là toán tử\)
 
- w1 = S.POP \(\)
+w1 = S.POP \(\)
 
- w2 = S.POP \(\)
+w2 = S.POP \(\)
 
- GiaTri = PHEPTOAN\(w2, w1\) //tính kết quả phép toán
+GiaTri = PHEPTOAN\(w2, w1\) //tính kết quả phép toán
 
- S.Push\(GiaTri\)
+S.Push\(GiaTri\)
 
- value &lt;- S.POP \(\) //lúc này ngăn xếp chỉ còn lại 1 giá trị duy nhất
-
-
+value &lt;- S.POP \(\) //lúc này ngăn xếp chỉ còn lại 1 giá trị duy nhất
 
 ### Bài tập 3:\(\*\)
 
