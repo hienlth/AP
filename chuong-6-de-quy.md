@@ -15,11 +15,9 @@ Các loại đệ quy:
 
 Cách khử đệ quy \(nếu có\):
 
-·Dùng mảng, dùng vòng lặp
-
-·Truy hồi, chia để trị
-
-·Lần ngược \(backtracking\)
+* Dùng mảng, dùng vòng lặp
+* Truy hồi, chia để trị
+* Lần ngược \(backtracking\)
 
 ## 2. Bài tập
 
@@ -29,71 +27,71 @@ Tìm ước số lẻ lớn nhất của số nguyên dương n.
 
 Ví dụ : n = 100 thì ước lẻ lớn nhất của 100 là 25
 
-int UocLeMax\(int n\)
+> int UocLeMax\(int n\)
+>
+> {
+>
+> > if\(n % 2 == 1\)
+> >
+> > {
+> >
+> > > return n;
+> >
+> > }
+> >
+> > return UocLeMax\(n/2\);
+>
+> }
 
-{
-
-if\(n % 2 == 1\)
-
- {
-
-return n;
-
- }
-
-return UocLeMax\(n/2\);
-
-}
-
-Hãy viết hàm đệ quy và khử đệ quy các bài toán sau đây:
+_**Hãy viết hàm đệ quy và khử đệ quy các bài toán sau đây:**_
 
 ### Bài tập 2:
 
-![](file:///C:\Users\HIENLTH\AppData\Local\Temp\msohtmlclip1\01\clip_image002.png), n lần
+![](/assets/Canban2dq.PNG)
 
 ### Bài tập 3:
 
-Viết lại hàm Linear Search và BinarySearch dùngđệ quy.
+Viết lại hàm **Linear Search **và** BinarySearch** dùng đệ quy.
 
 Công thức đệ quy:
 
 **Linear Search**:
 
-LS\(a,n,x\) = LS\(a, n-1, x\)  nếu a\[n-1\] != x
-
-LS\(a,n,x\) = n-1  nếu a\[n-1\] == x
-
-LS\(a,0,x\) = -1
+> LS\(a,n,x\) = LS\(a, n-1, x\)  nếu a\[n-1\] != x
+>
+> LS\(a,n,x\) = n-1  nếu a\[n-1\] == x
+>
+> LS\(a,0,x\) = -1
 
 **Binary Search**:
 
-BS\(a,l,r,x\) = BS\(a,l,r-1,x\)  nếu a\[mid\] &gt; x
+> BS\(a,l,r,x\) = BS\(a,l,r-1,x\)  nếu a\[mid\] &gt; x
+>
+> BS\(a,l,r,x\) = BS\(a,l+1,r,x\)  nếu a\[mid\] &lt; x
+>
+> BS\(a,l,r,x\) = mid  nếu a\[mid\] == x
+>
+> BS\(a,l,r,x\) = -1  nếu l&gt;r
 
-BS\(a,l,r,x\) = BS\(a,l+1,r,x\)  nếu a\[mid\] &lt; x
-
-BS\(a,l,r,x\) = mid  nếu a\[mid\] == x
-
-BS\(a,l,r,x\) = -1  nếu l&gt;r
-
-Trong đó mid = \(l + r\) / 2
+> Trong đó mid = \(l + r\) / 2
 
 ### Bài tập 4:
 
-Cho hàm![](file:///C:\Users\HIENLTH\AppData\Local\Temp\msohtmlclip1\01\clip_image004.png)
+Viết hàm đệ quy và khử đệ quy cho hàm sau:
 
-Viết hàm đệ quy và khử đệ quy.
+![](/assets/bt04dq.PNG)
 
 ### Bài tập 5:
 
 Viết hàm tính phần tử thứ k của dãy Fibonaci.
 
-![](file:///C:\Users\HIENLTH\AppData\Local\Temp\msohtmlclip1\01\clip_image006.png)
+![](/assets/bt5dq.PNG)
 
 ### Bài tập 6:
 
 Viết hàm tính tổ hợp chập k của n phần tử.
 
-![](file:///C:\Users\HIENLTH\AppData\Local\Temp\msohtmlclip1\01\clip_image008.png)
+![](/assets/bt6dq.PNG)
 
 ### Bài tập 7:
 
@@ -103,5 +101,5 @@ Bài toán tháp Hà Nội.
 
 Viết hàm Ackermann’s:
 
-![](file:///C:\Users\HIENLTH\AppData\Local\Temp\msohtmlclip1\01\clip_image010.png)
+![](/assets/bt8dq.PNG)
 
