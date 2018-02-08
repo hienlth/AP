@@ -169,35 +169,35 @@ thì cách hủy tương ứng sẽ là:
 >
 > }
 
-## 1.5. Con trỏ với mảng \(cấp phát mảng động\)
+## 1.6. Con trỏ với mảng
 
 Cách làm trước đây khi không sử dụng cấp phát động với mảng 1 chiều:
 
-int a\[100\];// cấp phát 100 ô nhớ cho mảng tối đa 100 phần tử
+> int a\[100\];// cấp phát 100 ô nhớ cho mảng tối đa 100 phần tử
 
 Cách làm này có nhiều hạn chế như: cấp phát thừa trong trường hợp n nhập vào &lt; 100 và không cho phép n nhập vào lớn hơn một số lượng định trước được cài đặt trong code \(100\).
 
 Để cấp phát mảng động \(số lượng phần tử cấp phát đúng bằng với n nhập vào và không giới hạn giá trị n\), ta làm như sau:
 
-//khai bao bien con tro a va xin cap phat vung nho chua n so interger
-
-int\* a = new int\[n\];
-
-//dung vong lap de nhap cac gia tri a\[i\]
-
-for \(int i = 0; i &lt; n; i++\)
-
-{
-
-cout&lt;&lt;"Nhap a\["&lt;&lt;i&lt;&lt;"\]: ";
-
-cout&lt;&lt; a\[i\];
-
-}
+> //khai bao bien con tro a va xin cap phat vung nho chua n so interger
+>
+> int\* a = new int\[n\];
+>
+> //dung vong lap de nhap cac gia tri a\[i\]
+>
+> for \(int i = 0; i &lt; n; i++\)
+>
+> {
+>
+> cout&lt;&lt;"Nhap a\["&lt;&lt;i&lt;&lt;"\]: ";
+>
+> cout&lt;&lt; a\[i\];
+>
+> }
 
 Chú ý: Sau khai báo
 
-int\* a = new int\[n\];
+> int\* a = new int\[n\];
 
 một vùng nhớ chứa n số nguyên sẽ được cấp phát, con trỏ a sẽ chỉ đến phần tử đầu tiên của dãy n số.
 
@@ -209,34 +209,20 @@ Link:[http://www.cplusplus.com/doc/tutorial/files/](http://www.cplusplus.com/doc
 
 Đối với C++, bạn sử dụng thư viện fstream.
 
-·ofstream: dùng để ghi
-
-·ifstream: dùng để đọc
+* **ofstream**: dùng để ghi
+* **ifstream**: dùng để đọc
 
 Ví dụ:
 
-ofstream FileDemo \("File Demo.txt"\);
-
-FileDemo&lt;&lt;"Day la file demo su dung fstream";
-
-FileDemo.close\(\);
+> ofstream FileDemo \("File Demo.txt"\);
+>
+> FileDemo&lt;&lt;"Day la file demo su dung fstream";
+>
+> FileDemo.close\(\);
 
 Có thể sử dụng hàm constructor để khởi tạo luôn tập tin dùng để đọc ghi hoặc khai báo phương thức open\(\) của chúng với tham số tùy chọn:
 
-```
-void
- open
-(
-const
-char
-*
-filename
-,
- ios
-::
-openmode mode
-);
-```
+> **void open \(const char\* filename, ios::openmode mode\);**
 
 | **Mode** | **Mô tả** |
 | :--- | :--- |
