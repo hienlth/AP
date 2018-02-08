@@ -72,43 +72,43 @@ Thuật toán chuyển đổi biểu thức từ trung tố sang hậu tố:
 > >
 > > while \(chưa hết biểu thức P\)
 > >
-> > Lấy 1 kí tự x trong P \(theo thứ tự trái qua phải\)
-> >
-> > if \(x là số\)
-> >
-> > Thêm x vào Q
-> >
-> > if \(x là dấu mở ngoặc\)
-> >
-> > S.Push\(x\)
-> >
-> > if \(x là toán tử\)
-> >
-> > while\( thứ tự ưu tiên S.TOP\(\) &gt;= x\)
-> >
-> > w &lt;- S.POP \(\)
-> >
-> > Thêm w vào Q
-> >
-> > S.Push\(x\)
-> >
-> > if \(x là dấu đóng ngoặc ‘\)’ \)
-> >
-> > while\(chưa gặp dấu mở ngoặc ‘\(‘ \)
-> >
-> > w &lt;- S.POP \(\)
-> >
-> > Thêm w vào Q
-> >
-> > S.POP \(\)//đẩy mở ngoặc ra khỏi stack
+> > > Lấy 1 kí tự x trong P \(theo thứ tự trái qua phải\)
+> > >
+> > > if \(x là số\)
+> > >
+> > > > Thêm x vào Q
+> > >
+> > > if \(x là dấu mở ngoặc\)
+> > >
+> > > > S.Push\(x\)
+> > >
+> > > if \(x là toán tử\)
+> > >
+> > > > while\( thứ tự ưu tiên S.TOP\(\) &gt;= x\)
+> > > >
+> > > > > w &lt;- S.POP \(\)
+> > > > >
+> > > > > Thêm w vào Q
+> > > >
+> > > > S.Push\(x\)
+> > >
+> > > if \(x là dấu đóng ngoặc ‘\)’ \)
+> > >
+> > > > while\(chưa gặp dấu mở ngoặc ‘\(‘ \)
+> > > >
+> > > > > w &lt;- S.POP \(\)
+> > > > >
+> > > > > Thêm w vào Q
+> > > >
+> > > > S.POP \(\)//đẩy mở ngoặc ra khỏi stack
 > >
 > > while\(! S.IsEmpty\(\)\)
 > >
-> > w &lt;- S.POP \(\)
+> > > w &lt;- S.POP \(\)
 > >
 > > if\(w không là mở ngoặc\)
 > >
-> > Thêm w vào Q
+> > > Thêm w vào Q
 
 _**Bước 2**_**: **Định giá trị biểu thức:
 
