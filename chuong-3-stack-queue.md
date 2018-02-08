@@ -58,55 +58,57 @@ Thuật toán chuyển đổi biểu thức từ trung tố sang hậu tố:
 * Nếu gặp 1 toán hạng \(con số hoặc biến\) thì nó ghi vào kết quả \(chuỗi kết quả là biểu thức hậu tố\).
 * Nếu gặp dấu mở ngoặc thì đưa nó vào stack.
 * Nếu gặp 1 toán tử \(ví dụ là t1\) thì thực hiện 2 bước sau:
+
   * Nếu stack rỗng hoặc toán tử t2 ở đỉnh stack có độ ưu tiên thấp hơn t1 thì ghi \(push\) t1vào ngăn xếp.
   * Nếu stack không rỗng, và còn toán tử t2 ở đỉnh ngăn xếp mà độ ưu tiên của t1 nhỏ hơn hay bằng độ ưu tiên của t2 thì lấy t2 ra khỏi ngăn xếp và ghi vào kết quả. Sau đó thêm t1 vào ngăn xếp.
 
 * Nếu gặp dấu đóng ngoặc thì cứ lấy các tất cả các toán tử trong ngăn xếp ra và ghi vào kết quả cho đến khi lấy được dấu mở ngoặc ra khỏi ngăn xếp \(không ghi\).
+
 * Khi đã duyệt hết biểu thức trung tố, lần lượt lấy tất cả toán tử \(nếu có\) từ ngăn xếp và ghi vào chuỗi kết quả.
 
 > function INFIXTOPOSTFIX \(Expression P\) return Expression Q
 >
-> Khai báo biến ngăn xếp S
->
-> while \(chưa hết biểu thức P\)
->
-> Lấy 1 kí tự x trong P \(theo thứ tự trái qua phải\)
->
-> if \(x là số\)
->
-> Thêm x vào Q
->
-> if \(x là dấu mở ngoặc\)
->
-> S.Push\(x\)
->
-> if \(x là toán tử\)
->
-> while\( thứ tự ưu tiên S.TOP\(\) &gt;= x\)
->
-> w &lt;- S.POP \(\)
->
-> Thêm w vào Q
->
-> S.Push\(x\)
->
-> if \(x là dấu đóng ngoặc ‘\)’ \)
->
-> while\(chưa gặp dấu mở ngoặc ‘\(‘ \)
->
-> w &lt;- S.POP \(\)
->
-> Thêm w vào Q
->
-> S.POP \(\)//đẩy mở ngoặc ra khỏi stack
->
-> while\(! S.IsEmpty\(\)\)
->
-> w &lt;- S.POP \(\)
->
-> if\(w không là mở ngoặc\)
->
-> Thêm w vào Q
+> > Khai báo biến ngăn xếp S
+> >
+> > while \(chưa hết biểu thức P\)
+> >
+> > Lấy 1 kí tự x trong P \(theo thứ tự trái qua phải\)
+> >
+> > if \(x là số\)
+> >
+> > Thêm x vào Q
+> >
+> > if \(x là dấu mở ngoặc\)
+> >
+> > S.Push\(x\)
+> >
+> > if \(x là toán tử\)
+> >
+> > while\( thứ tự ưu tiên S.TOP\(\) &gt;= x\)
+> >
+> > w &lt;- S.POP \(\)
+> >
+> > Thêm w vào Q
+> >
+> > S.Push\(x\)
+> >
+> > if \(x là dấu đóng ngoặc ‘\)’ \)
+> >
+> > while\(chưa gặp dấu mở ngoặc ‘\(‘ \)
+> >
+> > w &lt;- S.POP \(\)
+> >
+> > Thêm w vào Q
+> >
+> > S.POP \(\)//đẩy mở ngoặc ra khỏi stack
+> >
+> > while\(! S.IsEmpty\(\)\)
+> >
+> > w &lt;- S.POP \(\)
+> >
+> > if\(w không là mở ngoặc\)
+> >
+> > Thêm w vào Q
 
 _**Bước 2**_**: **Định giá trị biểu thức:
 
