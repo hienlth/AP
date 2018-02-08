@@ -27,7 +27,9 @@ Các hàm thành viên của lớp queue:
 | front | Trả về giá trị phần tử đầu queue | &lt;T&gt; |
 | back | Trả về giá trị phần tử cuối queue | &lt;T&gt; |
 | push\(&lt;T&gt;\) | Thêm một phần tử vào cuối queue | void |
+| push\_back\(&lt;T&gt;\) |  |  |
 | pop\(\) | Xóa phần tử đầu queue | void |
+| pop\_front\(\) |  |  |
 
 ## 3. Bài tập
 
