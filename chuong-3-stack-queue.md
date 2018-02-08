@@ -112,27 +112,27 @@ Thuật toán chuyển đổi biểu thức từ trung tố sang hậu tố:
 
 _**Bước 2**_**: **Định giá trị biểu thức:
 
-function CALCULATEPOSTFIX \(Expression Q\) return value
-
-Khai báo biến ngăn xếp S
-
-foreach chuỗi x trong biểu thức Q do
-
-if\(x là số\)
-
-S.Push\(x\)
-
-if \(x là toán tử\)
-
-w1 = S.POP \(\)
-
-w2 = S.POP \(\)
-
-GiaTri = PHEPTOAN\(w2, w1\) //tính kết quả phép toán
-
-S.Push\(GiaTri\)
-
-value &lt;- S.POP \(\) //lúc này ngăn xếp chỉ còn lại 1 giá trị duy nhất
+> function CALCULATEPOSTFIX \(Expression Q\) return value
+>
+> > Khai báo biến ngăn xếp S
+> >
+> > foreach chuỗi x trong biểu thức Q do
+> >
+> > > if\(x là số\)
+> > >
+> > > > S.Push\(x\)
+> > >
+> > > if \(x là toán tử\)
+> > >
+> > > > w1 = S.POP \(\)
+> > > >
+> > > > w2 = S.POP \(\)
+> > > >
+> > > > GiaTri = PHEPTOAN\(w2, w1\) //tính kết quả phép toán
+> > >
+> > > S.Push\(GiaTri\)
+> >
+> > value &lt;- S.POP \(\) //lúc này ngăn xếp chỉ còn lại 1 giá trị duy nhất
 
 ### Bài tập 3:\(\*\)
 
