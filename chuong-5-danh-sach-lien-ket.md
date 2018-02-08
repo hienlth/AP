@@ -38,7 +38,7 @@ Viết chương trình tổng, hiệu của 2 số nguyên lớn tối đa 32 ch
 
 ## Bài tập 4:
 
-Khai báo danh sách liên kết đơn để biểu diễn đa thức. 
+Khai báo danh sách liên kết đơn để biểu diễn đa thức.
 
 ![](/assets/dslkbt04.PNG)
 
@@ -51,6 +51,4 @@ Cài đặt các thao tác sau trên đa thức:
 5. Nhân hai đa thức.
 
 
-
-[^1]: Enter footnote here.
 
