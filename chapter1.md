@@ -1,3 +1,5 @@
+# A. LÝ THUYẾT
+
 # 1.Con trỏ
 
 Con trỏ là khái niệm đặc biệt trong C/C++ được dùng để chứa địa chỉ. Các thao tác với con trỏ:
@@ -13,17 +15,17 @@ Con trỏ là khái niệm đặc biệt trong C/C++ được dùng để chứa
 
 Ví dụ:
 
-int\* pa; // con trỏ đến kiểu int
-
-DIEM \*pd; // con trỏ đến kiểu DIEM
-
-Toán tử **&**: dùng để xác định địa chỉ của một ô nhớ:
-
-Ví dụ:
-
-int a = 1;
-
-int\* pa = &a;// con trỏ trỏ đến ô nhớ của biến a
+> int\* pa; // con trỏ đến kiểu int
+>
+> DIEM \*pd; // con trỏ đến kiểu DIEM
+>
+> Toán tử **&**: dùng để xác định địa chỉ của một ô nhớ:
+>
+> Ví dụ:
+>
+> int a = 1;
+>
+> int\* pa = &a;// con trỏ trỏ đến ô nhớ của biến a
 
 ## 1.2. Khởi tạo biến con trỏ dùng cấp phát vùng nhớ \(cấp phát động\)
 
@@ -221,8 +223,6 @@ FileDemo&lt;&lt;"Day la file demo su dung fstream";
 
 FileDemo.close\(\);
 
-
-
 Có thể sử dụng hàm constructor để khởi tạo luôn tập tin dùng để đọc ghi hoặc khai báo phương thức open\(\) của chúng với tham số tùy chọn:
 
 ```
@@ -260,7 +260,7 @@ myfile.open (
 "
 example.bin
 "
-, ios::out | ios::app | ios::binary); 
+, ios::out | ios::app | ios::binary);
 ```
 
 Phương thức is\_open\(\): dùng để kiểm tra file có đang mở hay không.
@@ -368,7 +368,7 @@ else
 "
 Unable to open file
 "
-; 
+;
 ```
 
 ```
