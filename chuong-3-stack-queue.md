@@ -1,6 +1,6 @@
 # Chương 3: STL Stack, Queue
 
-## 1. Stack
+## 1. Stack {#stack}
 
 Stack \(last in, first out – LIFO\): phần tử vào stack sau cùng, là phần tử được lấy ra khỏi stack trước nhất.
 
@@ -14,7 +14,7 @@ Các hàm thành viên của lớp stack:
 | push\(&lt;T&gt;\) | Đưa một phần tử vào stack | void |
 | pop\(\) | Xóa phần tử ở đỉnh stack | void |
 
-## 2. Queue
+## 2. Queue {#queue}
 
 Queue \(first in, first out – FIFO\): phần tử vào queue trước nhất, là phần tử được lấy ra khỏi queue trước nhất.
 
