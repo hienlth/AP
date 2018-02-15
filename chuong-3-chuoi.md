@@ -2,6 +2,80 @@
 
 ## 1. Lý thuyết
 
+### 1.1 Khái niệm
+
+Chuỗi ký tự là một dãy gồm các ký tự \(kiểu char\) hoặc một mảng các ký tự được kết thúc bằng ký tự ‘**\0**’ \(còn được gọi là ký tự 
+
+**NULL** trong bảng mã ASCII\). Các hằng chuỗi ký tự được đặt trong cặp dấu nháy kép “”.
+
+### 1.2 Khai báo
+
+#### 1.2.1 Khai báo dạng mảng
+
+Cú pháp: 
+
+> char &lt;Biến&gt; \[Chiều dài tối đa\]
+
+Ví dụ: Ta khai báo:
+
+> char **Ten**\[12\];
+
+nghĩa là bộ nhớ sẽ cung cấp 12+1 bytes để lưu trữ nội dung của chuỗi ký tự **Ten**; byte cuối cùng lưu trữ ký tự ‘\0’ để kết thúc chuỗi.
+
+_Ghi chú:_
+
+* Chiều dài tối đa của biến chuỗi là một hằng nguyên nằm trong khoảng từ 1 đến 255 bytes.
+* Chiều dài tối đa không nên khai báo thừa để tránh lãng phí bộ nhớ, nhưng cũng không nên khai báo thiếu  .
+
+#### 1.2.2 Khai báo dạng con trỏ
+
+Cú pháp: 
+
+> char \*&lt;Biến&gt;
+
+Ví dụ: Ta khai báo:
+
+> char \*Ten;
+
+nghĩa là, bộ nhớ sẽ dành 2 byte để lưu trữ địa chỉ của biến con trỏ Ten đang chỉ đến, chưa cung cấp nơi để lưu trữ dữ liệu. Muốn có chỗ để lưu trữ dữ liệu, ta phải khởi tạo đối tượng bằng từ khóa new, sau đó mới gán dữ liệu cho biến.
+
+#### 1.2.3 Ví dụ
+
+Cú pháp: 
+
+> char &lt;Biến&gt; \[\]= &lt;“Hằng chuỗi”&gt;
+
+hoặc:
+
+> char &lt;bien&gt; \[\] = {‘H’, ‘I’, ‘E’, ‘N’, ‘\0’};
+
+Ví dụ:
+
+> \#include &lt;iostream&gt;
+>
+> using namespace std;
+>
+> int main\(\)
+>
+> {
+>
+> > char Chuoi\[\]="Mau nang hay la mau mat em” ;
+> >
+> > cout&lt;&lt;"Vua khai bao vua gan tri : ”&lt;&lt;Chuoi&lt;&lt;endl;
+> >
+> > return 0;
+>
+> }
+
+\* Ghi chú:
+
+* Chuỗi được khai báo là một mảng các ký tự nên các thao tác trên mảng có thể áp dụng đối với chuỗi ký tự.
+* Không thể gán giá trị sau khi khai báo. Ví dụ: chuoi = “Nguyen Van A”;//không hợp lệ.
+
+
+
+
+
 ## 2. Bài tập
 
 ### Bài tập 1
