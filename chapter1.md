@@ -385,7 +385,7 @@ Viết chương trình cho người dùng nhập vào:
 
 Tính và in ra tổng số tiền lãi. Sinh viên thực hiện bằng 2 cách: rút ra công thức tính nhanh và dùng vòng lặp.
 
-**Ví dụ:  
+**Ví dụ:    
 **
 
 M = 1000000, n = 3, q = 1.15
@@ -421,7 +421,7 @@ Số tế bào ban đầu là 100,
 
 Cho người dùng nhập chuỗi S và lựa chọn các thao tác sau:
 
-1.Đếm và cho biết số lượng khoảng trắng, số lượng  chữ số, số lượng chữ cái , số lượng các  kí tự khác  \(ví dụ: !@\*$...\).
+_**1.Đếm và cho biết số lượng khoảng trắng, số lượng  chữ số, số lượng chữ cái , số lượng các  kí tự khác**_  \(ví dụ: !@\*$...\).
 
 Ví dụ:
 
@@ -439,7 +439,7 @@ Ví dụ:
 >
 > So luong ki tu khac: 4
 
-2. Đếm số lượng từ của chuỗi, biết rằng các từ cách nhau bởi khoảng trắng.
+_**2.Đếm số lượng từ của chuỗi, biết rằng các từ cách nhau bởi khoảng trắng.**_
 
 Ví dụ:
 
