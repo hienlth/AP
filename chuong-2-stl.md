@@ -94,7 +94,7 @@ Ví dụ:
 
 **vector&lt;kiểu&gt; biến\(số\_phần\_tử\);**
 
-**vector&lt;kiểu&gt; biến\(số**_**phầntử, giátrịmộtphầntử**_**\);**
+**vector&lt;kiểu&gt; biến\(**_**sốphầntử, giátrịmộtphầntử**_**\);**
 
 #### 1.4.2 Ví dụ:
 
@@ -103,13 +103,13 @@ Ví dụ:
 > **vector &lt;int&gt; A  
 > ;** /\* tạo vector rỗng kiểu dữ liệu int \*/
 >
-> **vector &lt;int&gt; B\(5,777\);  
+> **vector &lt;int&gt; B\(5,777\);    
 > **/\*tạo vector với 5 phần tử là 777 \*/
 >
 > **vector &lt;int&gt; C \(B.begin\(\),B.end\(\)\)  
 > ; **/\*lấy từ đầu đến cuối vector B \*/
 >
-> **   
+> **  
 > vector &lt;int&gt; D\(C\);** //copy từ vector C
 >
 > /\* Vector 2 chiều\*/
@@ -124,7 +124,7 @@ Ví dụ:
 
 #### 1.4.3 Các hàm thành  viên:
 
-* **Capacity**: số lượng tối đa có thể đáp ứng tại thời điểm gọi.
+* **capacity**: số lượng tối đa có thể đáp ứng tại thời điểm gọi.
 * **size **: trả  về số lượng  phần tử  của vector.
 * **empty  **: trả  về true\(1\)  nếu vector  rỗng,  ngược lại là  false\(0\).
 
