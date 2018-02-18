@@ -1,6 +1,6 @@
 # Chương 1: Con trỏ
 
-# 1. LÝ THUYẾT
+# 1. Lý thuyết
 
 ## 1.1. Con trỏ
 
@@ -288,7 +288,7 @@ Các phương thức khác:
 * **bad\(\)**: trả về true nếu đọc/ghi bị lỗi \(tương tự cho **fail\(\)**\)
 * **eof\(\)**: trả về true nếu ở cuối file.
 
-# 2. BÀI TẬP THỰC HÀNH
+# 2. Bài tập Thực hành
 
 ## **Bài tập 01:**
 
@@ -369,7 +369,7 @@ Gọi hàm:
 
 > SapXep\(A, n, Chan\_Dau\_Day\);
 
-# 3. BÀI TẬP TỰ LUYỆN
+# 3. Bài tập Tự luyện
 
 ## Bài tập 01: Tính tiền lãi tiết kiệm
 
@@ -385,7 +385,7 @@ Viết chương trình cho người dùng nhập vào:
 
 Tính và in ra tổng số tiền lãi. Sinh viên thực hiện bằng 2 cách: rút ra công thức tính nhanh và dùng vòng lặp.
 
-**Ví dụ:      
+**Ví dụ:        
 **
 
 M = 1000000, n = 3, q = 1.15
