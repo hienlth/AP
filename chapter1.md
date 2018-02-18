@@ -1,8 +1,8 @@
 # Chương 1: Con trỏ
 
-# A. LÝ THUYẾT
+# 1. LÝ THUYẾT
 
-# 1.Con trỏ
+## 1.1. Con trỏ
 
 Con trỏ là khái niệm đặc biệt trong C/C++ được dùng để chứa địa chỉ.
 
@@ -13,7 +13,7 @@ Các thao tác với con trỏ:
 * Truy xuất giá trị ô nhớ từ biến con trỏ.
 * Hủy vùng nhớ đã xin cấp phát.
 
-## 1.1 Khai báo biến con trỏ
+### 1.1.1 Khai báo biến con trỏ
 
 &lt;KieuDuLieu&gt; \*&lt;TenBien&gt;;
 
@@ -31,7 +31,7 @@ Ví dụ:
 >
 > int\* pa = &a;// con trỏ trỏ đến ô nhớ của biến a
 
-## 1.2. Khởi tạo biến con trỏ \(cấp phát động\)
+### 1.1.2. Khởi tạo biến con trỏ \(cấp phát động\)
 
 Sử dụng toán tử **new**
 
@@ -67,9 +67,9 @@ Ví dụ: Cả 2 con trỏ sau đây đều hợp lệ.
 >
 > cout&lt;&lt;“Cap phat khong thanh cong”;
 
-## 1.3. Truy xuất giá trị ô nhớ từ biến con trỏ
+### 1.1.3. Truy xuất giá trị ô nhớ từ biến con trỏ
 
-### 1.3.1. Đối với các kiểu dữ liệu cơ bản \(int, float, …\)
+#### a. Đối với các kiểu dữ liệu cơ bản \(int, float, …\)
 
 Toán tử \*: dùng để xác định giá trị ô nhớ tại địa chỉ trong biến con trỏ:
 
@@ -87,7 +87,7 @@ câu lệnh
 
 sẽ xuất ra “1”.
 
-### 1.3.2. Đối với các kiểu dữ liệu cấu trúc
+#### b. Đối với các kiểu dữ liệu cấu trúc
 
 Để truy xuất các thành phần của kiểu cấu trúc, dùng **-&gt;**
 
@@ -107,7 +107,7 @@ Với kiểu cấu trúc DIEM được định nghĩa như sau
 
 Để truy xuất thành phần dùng: **pDiem-&gt;hoanhDo** và **pDiem-&gt;tungDo**
 
-## 1.4. Hủy vùng nhớ đã xin cấp phát
+### 1.1.4. Hủy vùng nhớ đã xin cấp phát
 
 Để hủy vùng nhớ đã xin cấp phát, dùng toán tử delete
 
@@ -123,7 +123,7 @@ thì cách hủy tương ứng sẽ là:
 >
 > delete pb\[\];
 
-## 1.5 Ví dụ Con trỏ cơ bản
+### 1.1.5 Ví dụ Con trỏ cơ bản
 
 > struct DIEM
 >
@@ -173,7 +173,7 @@ thì cách hủy tương ứng sẽ là:
 >
 > }
 
-## 1.6. Con trỏ với mảng
+### 1.1.6. Con trỏ với mảng
 
 Cách làm trước đây khi không sử dụng cấp phát động với mảng 1 chiều:
 
@@ -207,7 +207,7 @@ một vùng nhớ chứa n số nguyên sẽ được cấp phát, con trỏ a s
 
 Các phần tử của mảng được truy xuất qua toán tử \[\] như với mảng trước đây đã dùng.
 
-# 2. ĐỌC XUẤT FILE VĂN BẢN
+## 1.2. ĐỌC XUẤT FILE VĂN BẢN
 
 Link tham khảo thêm các hàm: [http://www.cplusplus.com/doc/tutorial/files/](http://www.cplusplus.com/doc/tutorial/files/)
 
@@ -288,7 +288,7 @@ Các phương thức khác:
 * **bad\(\)**: trả về true nếu đọc/ghi bị lỗi \(tương tự cho **fail\(\)**\)
 * **eof\(\)**: trả về true nếu ở cuối file.
 
-# B. BÀI TẬP THỰC HÀNH
+# 2. BÀI TẬP THỰC HÀNH
 
 ## **Bài tập 01:**
 
@@ -369,7 +369,7 @@ Gọi hàm:
 
 > SapXep\(A, n, Chan\_Dau\_Day\);
 
-# C. BÀI TẬP TỰ LUYỆN
+# 3. BÀI TẬP TỰ LUYỆN
 
 ## Bài tập 01: Tính tiền lãi tiết kiệm
 
@@ -385,7 +385,7 @@ Viết chương trình cho người dùng nhập vào:
 
 Tính và in ra tổng số tiền lãi. Sinh viên thực hiện bằng 2 cách: rút ra công thức tính nhanh và dùng vòng lặp.
 
-**Ví dụ:    
+**Ví dụ:      
 **
 
 M = 1000000, n = 3, q = 1.15
