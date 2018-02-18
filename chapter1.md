@@ -6,7 +6,7 @@
 
 Con trỏ là khái niệm đặc biệt trong C/C++ được dùng để chứa địa chỉ.
 
- Các thao tác với con trỏ:
+Các thao tác với con trỏ:
 
 * Khai báo biến con trỏ.
 * Khởi tạo con trỏ dùng cấp phát vùng nhớ.
@@ -31,9 +31,9 @@ Ví dụ:
 >
 > int\* pa = &a;// con trỏ trỏ đến ô nhớ của biến a
 
-## 1.2. Khởi tạo biến con trỏ dùng cấp phát vùng nhớ \(cấp phát động\)
+## 1.2. Khởi tạo biến con trỏ \(cấp phát động\)
 
-Sử dụng toán tử new
+Sử dụng toán tử **new**
 
 _**Ví dụ:**_
 
@@ -69,7 +69,7 @@ Ví dụ: Cả 2 con trỏ sau đây đều hợp lệ.
 
 ## 1.3. Truy xuất giá trị ô nhớ từ biến con trỏ
 
-### 1.3.1. Đối với các kiểu dữ liệu cơ bản \(như kiểu int, float, …\)
+### 1.3.1. Đối với các kiểu dữ liệu cơ bản \(int, float, …\)
 
 Toán tử \*: dùng để xác định giá trị ô nhớ tại địa chỉ trong biến con trỏ:
 
@@ -87,7 +87,7 @@ câu lệnh
 
 sẽ xuất ra “1”.
 
-### 1.3.2. Đối với các kiểu dữ liệu cấu trúc \(như kiểu SINHVIEN, DIEM, …\)
+### 1.3.2. Đối với các kiểu dữ liệu cấu trúc
 
 Để truy xuất các thành phần của kiểu cấu trúc, dùng **-&gt;**
 
@@ -255,39 +255,33 @@ Ví dụ đọc nội dung file text:
 >
 > using namespace std;
 >
->
->
 > int main \(\) {
 >
->   string line;
+> string line;
 >
->   ifstream myfile \("example.txt"\);
+> ifstream myfile \("example.txt"\);
 >
->   if \(myfile.is\_open\(\)\)
+> if \(myfile.is\_open\(\)\)
 >
->   {
+> {
 >
->     while \( getline \(myfile,line\) \)
->
->     {
->
->       cout &lt;&lt; line &lt;&lt; '\n';
->
->     }
->
->     myfile.close\(\);
->
->   }
->
->   else cout &lt;&lt; "Unable to open file"; 
->
->
->
->   return 0;
+> > while \( getline \(myfile,line\) \)
+> >
+> > {
+> >
+> > > cout &lt;&lt; line &lt;&lt; '\n';
+> >
+> > }
+> >
+> > myfile.close\(\);
 >
 > }
-
-
+>
+> else cout &lt;&lt; "Unable to open file";
+>
+> return 0;
+>
+> }
 
 Các phương thức khác:
 
@@ -305,9 +299,9 @@ Viết chương trình nhập vào một số nguyên n. Sử dụng con trỏ �
 * Tính tổng / tích / đếm các phần tử thỏa yêu cầu
 * Sắp xếp tăng / giảm.
 
-## Bài tập 02: 
+## Bài tập 02:
 
-Tương tự bài tập 01 nhưng trên mảng 2 chiều \(con trỏ cấp 2\). 
+Tương tự bài tập 01 nhưng trên mảng 2 chiều \(con trỏ cấp 2\).
 
 * Tổng các cột trên đường chéo chính.
 * Kiểm tra A\(n,n\) có phải là ma trận đối xứng hay không?
@@ -325,7 +319,7 @@ trong đó mỗi b\[i\] \(kiểu int\*\) là một mảng một chiều n số n
 
 > b\[i\] = new int\[n\];
 
-## Bài tập 03: 
+## Bài tập 03:
 
 Mở rộng cho trường hợp đọc số phần tử từ file **INPUT.txt**, thực hiện sắp xếp và lưu kết quả xuống file **OUTPUT.txt**.
 
@@ -359,23 +353,21 @@ Cài đặt các hàm:
 >
 > {
 >
-> 	//nếu y chẵn, x lẻ
->
-> 	if \(\(Y % 2 == 0\) && \(X % 2 == 1\)\) return false;
->
-> 	if \(\(X % 2 == 0\) && \(Y % 2 == 1\)\) return true;
->
-> 	//ngược lại
->
-> 	return Ascending\(X, Y\);
+> > //nếu y chẵn, x lẻ
+> >
+> > if \(\(Y % 2 == 0\) && \(X % 2 == 1\)\) return false;
+> >
+> > if \(\(X % 2 == 0\) && \(Y % 2 == 1\)\) return true;
+> >
+> > //ngược lại
+> >
+> > return Ascending\(X, Y\);
 >
 > }
 
 Gọi hàm:
 
 > SapXep\(A, n, Chan\_Dau\_Day\);
-
-
 
 # C. BÀI TẬP TỰ LUYỆN
 
@@ -393,7 +385,8 @@ Viết chương trình cho người dùng nhập vào:
 
 Tính và in ra tổng số tiền lãi. Sinh viên thực hiện bằng 2 cách: rút ra công thức tính nhanh và dùng vòng lặp.
 
-**Ví dụ:**
+**Ví dụ:  
+**
 
 M = 1000000, n = 3, q = 1.15
 
@@ -428,7 +421,7 @@ Số tế bào ban đầu là 100,
 
 Cho người dùng nhập chuỗi S và lựa chọn các thao tác sau:
 
-1.	Đếm và cho biết số lượng khoảng trắng, số lượng  chữ số, số lượng chữ cái , số lượng các  kí tự khác  \(ví dụ: !@\*$...\).
+1.Đếm và cho biết số lượng khoảng trắng, số lượng  chữ số, số lượng chữ cái , số lượng các  kí tự khác  \(ví dụ: !@\*$...\).
 
 Ví dụ:
 
@@ -446,14 +439,14 @@ Ví dụ:
 >
 > So luong ki tu khac: 4
 
-2.	Đếm số lượng từ của chuỗi, biết rằng các từ cách nhau bởi khoảng trắng.
+2. Đếm số lượng từ của chuỗi, biết rằng các từ cách nhau bởi khoảng trắng.
 
 Ví dụ:
 
 * Nhập vào: \(tương tự ví dụ trên\)
 * Xuất ra: Co 4 tu
 
-3.	Chuyển đổi kí tự đầu mỗi từ thành kí tự in hoa, các kí tự khác in thường.
+* Chuyển đổi kí tự đầu mỗi từ thành kí tự in hoa, các kí tự khác in thường.
 
 Ví dụ:
 
