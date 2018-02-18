@@ -44,27 +44,19 @@ Ví dụ:
 >
 > vector &lt;int&gt; :: **iterator  **it;
 >
->
->
 > /\* trỏ  đến vị  trí phần  tử  đầu tiên  của vector \*/
 >
 > it=vector.**begin**\(\);
 >
->
->
 > /\*trỏ  đến vị trí kết  thúc \(không  phải  phần tử  cuối  cùng nhé\) của vector\)  \*/
 >
 > it=vector.**end**\(\);
->
->
 >
 > /\* khai  báo iterator ngược  “rit” \*/
 >
 > vector &lt;int&gt; :: **reverse\_iterator **rit;
 >
 > rit =  vector.**rbegin**\(\);
->
->
 >
 > /\* trỏ  đến vị  trí kết thúc của vector theo  chiều  ngược \(không phải  phần tử đầu tiên  nhé\*/
 >
@@ -108,17 +100,19 @@ Ví dụ:
 
 > /\*  Vector 1 chiều \*/
 >
-> **vector &lt;int&gt; A;** /\* tạo vector rỗng kiểu dữ liệu int \*/
+> **vector &lt;int&gt; A  
+> ;** /\* tạo vector rỗng kiểu dữ liệu int \*/
 >
-> **vector &lt;int&gt; B\(5,777\);**/\*tạo vector với 5 phần tử là 777 \*/
+> **vector &lt;int&gt; B\(5,777\);  
+> **/\*tạo vector với 5 phần tử là 777 \*/
 >
-> **vector &lt;int&gt; C \(B.begin\(\),B.end\(\)\); **/\*lấy từ đầu đến cuối vector B \*/
+> **vector &lt;int&gt; C \(B.begin\(\),B.end\(\)\)  
+> ; **/\*lấy từ đầu đến cuối vector B \*/
 >
-> ** vector &lt;int&gt; D\(C\);** //copy từ vector C
-
-
-
-> /\* Vector 2 chiều\*/ 
+> **   
+> vector &lt;int&gt; D\(C\);** //copy từ vector C
+>
+> /\* Vector 2 chiều\*/
 >
 > **vector &lt; vector &lt;int&gt; &gt; v;** /\* Tạo vector 2 chiều rỗng \*/
 >
@@ -128,27 +122,29 @@ Ví dụ:
 >
 > **vector &lt; vector &lt;int&gt; &gt;  v \(5, vector &lt;int&gt; \(10,1\)\);** /\*khai báo vector 5\*10 với các phần tử khởi tạo giá trị là 1\*/
 
-#### 1.4.3 Các hàm thành  viên:
+#### 1.4.3 Các hàm thành  viên:
 
 * **Capacity**: số lượng tối đa có thể đáp ứng tại thời điểm gọi.
-* **size **: trả  về số lượng  phần tử  của vector.
-* **empty  **: trả  về true\(1\)  nếu vector  rỗng,  ngược lại là  false\(0\).
+* **size **: trả  về số lượng  phần tử  của vector.
+* **empty  **: trả  về true\(1\)  nếu vector  rỗng,  ngược lại là  false\(0\).
 
 #### 1.4.4 Truy cập tới phần tử:
 
-* **operator \[i\]**  : trả về giá trị phần tử thứ  **i**.
-* **at **: tương tự như trên.
-* **front**: trả  về giá  trị phần tử đầu tiên.
-* **back**: trả  về giá trị phần  tử cuối cùng.
+* **operator \[i\]**  : trả về giá trị phần tử thứ  **i**.
+* **at **: tương tự như trên.
+* **front**: trả  về giá  trị phần tử đầu tiên.
+* **back**: trả  về giá trị phần  tử cuối cùng.
 
 #### 1.4.5 Chỉnh sửa:
 
-* **push\_back **: thêm  vào ở  cuối vector.
-* **pop\_back  **: loại bỏ phần tử ở cuối vector.
-* **insert \(iterator,x\)**: chèn “x”  vào trước  vị trí “iterator” \(x  có thể là  phần tử  hay iterator của 1  đoạn  phần tử…\).
-* **erase **: xóa phần tử  ở  vị trí iterator.
-* **swap  **: đổi 2 vector cho nhau \(ví dụ: A.swap\(B\);\).
+* **push\_back **: thêm  vào ở  cuối vector.
+* **pop\_back  **: loại bỏ phần tử ở cuối vector.
+* **insert \(iterator,x\)**: chèn “x”  vào trước  vị trí “iterator” \(x  có thể là  phần tử  hay iterator của 1  đoạn  phần tử…\).
+* **erase **: xóa phần tử  ở  vị trí iterator.
+* **swap  **: đổi 2 vector cho nhau \(ví dụ: A.swap\(B\);\).
 * **clear**: xóa vector.
+
+## 2. Bài tập
 
 
 

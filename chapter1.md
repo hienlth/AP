@@ -8,14 +8,14 @@ Con trỏ là khái niệm đặc biệt trong C/C++ được dùng để chứa
 
 Các thao tác với con trỏ:
 
-* Khai báo biến con trỏ.
-* Khởi tạo con trỏ dùng cấp phát vùng nhớ.
-* Truy xuất giá trị ô nhớ từ biến con trỏ.
+* Khai báo biến con trỏ;
+* Khởi tạo con trỏ dùng cấp phát vùng nhớ;
+* Truy xuất giá trị ô nhớ từ biến con trỏ;
 * Hủy vùng nhớ đã xin cấp phát.
 
 ### 1.1.1 Khai báo biến con trỏ
 
-&lt;KieuDuLieu&gt; \*&lt;TenBien&gt;;
+**&lt;KieuDuLieu&gt; \*&lt;TenBien&gt;;**
 
 Ví dụ:
 
@@ -47,9 +47,9 @@ Toán tử new còn có thể sử dụng thể cấp phát vùng nhớ cho nhi�
 
 _**Lưu ý:**_
 
-Để kiểm tra cấp phát vùng nhớ thành công hay không, ta dùng con trỏ đặc biệt NULL.
+Để kiểm tra cấp phát vùng nhớ thành công hay không, ta dùng con trỏ đặc biệt **NULL**.
 
-NULL là con trỏ đặc biệt, có thể được gán cho các biến con trỏ của các kiểu dữ liệu khác nhau.
+Con trỏ **NULL **có thể được gán cho các biến con trỏ của các kiểu dữ liệu khác nhau.
 
 Ví dụ: Cả 2 con trỏ sau đây đều hợp lệ.
 
@@ -65,7 +65,7 @@ Ví dụ: Cả 2 con trỏ sau đây đều hợp lệ.
 >
 > if \(pDiem == NULL\)// nếu pDiem vẫn bằng NULL thì xin cấp phát không thành công
 >
-> cout&lt;&lt;“Cap phat khong thanh cong”;
+> > cout&lt;&lt;“Cap phat khong thanh cong”;
 
 ### 1.1.3. Truy xuất giá trị ô nhớ từ biến con trỏ
 
@@ -109,7 +109,7 @@ Với kiểu cấu trúc DIEM được định nghĩa như sau
 
 ### 1.1.4. Hủy vùng nhớ đã xin cấp phát
 
-Để hủy vùng nhớ đã xin cấp phát, dùng toán tử delete
+Để hủy vùng nhớ đã xin cấp phát, dùng toán tử **delete**
 
 Ví dụ đã khai báo 2 con trỏ pa, pb như sau:
 
@@ -179,7 +179,7 @@ Cách làm trước đây khi không sử dụng cấp phát động với mản
 
 > int a\[100\];// cấp phát 100 ô nhớ cho mảng tối đa 100 phần tử
 
-Cách làm này có nhiều hạn chế như: cấp phát thừa trong trường hợp n nhập vào &lt; 100 và không cho phép n nhập vào lớn hơn một số lượng định trước được cài đặt trong code \(100\).
+Cách trên có nhiều hạn chế như: cấp phát thừa trong trường hợp n nhập vào &lt; 100 và không cho phép n nhập vào lớn hơn một số lượng định trước được cài đặt trong code \(100\).
 
 Để cấp phát mảng động \(số lượng phần tử cấp phát đúng bằng với n nhập vào và không giới hạn giá trị n\), ta làm như sau:
 
@@ -385,7 +385,7 @@ Viết chương trình cho người dùng nhập vào:
 
 Tính và in ra tổng số tiền lãi. Sinh viên thực hiện bằng 2 cách: rút ra công thức tính nhanh và dùng vòng lặp.
 
-**Ví dụ:        
+**Ví dụ:          
 **
 
 M = 1000000, n = 3, q = 1.15
@@ -421,7 +421,7 @@ Số tế bào ban đầu là 100,
 
 Cho người dùng nhập chuỗi S và lựa chọn các thao tác sau:
 
-_**1.Đếm và cho biết số lượng khoảng trắng, số lượng  chữ số, số lượng chữ cái , số lượng các  kí tự khác**_  \(ví dụ: !@\*$...\).
+_**1.Đếm và cho biết số lượng khoảng trắng, số lượng  chữ số, số lượng chữ cái, số lượng các  kí tự khác**_  \(ví dụ: !@\*$...\).
 
 Ví dụ:
 
