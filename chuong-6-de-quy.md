@@ -72,7 +72,7 @@ Công thức đệ quy:
 > BS\(a,l,r,x\) = mid  nếu a\[mid\] == x
 >
 > BS\(a,l,r,x\) = -1  nếu l&gt;r
-
+>
 > Trong đó mid = \(l + r\) / 2
 
 ### Bài tập 4:
@@ -95,11 +95,19 @@ Viết hàm tính tổ hợp chập k của n phần tử.
 
 ### Bài tập 7:
 
-Bài toán tháp Hà Nội.
-
-### Bài tập 8:
-
 Viết hàm Ackermann’s:
 
 ![](/assets/bt8dq.PNG)
+
+### Bài tập 8:
+
+Bài toán tháp Hà Nội.
+
+### Bài tập 9:
+
+Bài toán **mã đi tuần**
+
+### Bài tập 10:
+
+Bài toán **8 con hậu**.
 
