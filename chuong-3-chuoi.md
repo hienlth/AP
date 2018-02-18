@@ -22,7 +22,7 @@ Ví dụ: Ta khai báo:
 
 nghĩa là bộ nhớ sẽ cung cấp 12+1 bytes để lưu trữ nội dung của chuỗi ký tự **Ten**; byte cuối cùng lưu trữ ký tự ‘\0’ để kết thúc chuỗi.
 
-_Ghi chú:    
+_Ghi chú:      
 _
 
 * Chiều dài tối đa của biến chuỗi là một hằng nguyên nằm trong khoảng từ 1 đến 255 bytes.
@@ -170,8 +170,6 @@ Ví dụ:
 >
 > > cout &lt;&lt; c;
 
-   
-
 Đoạn chương trình trên sẽ đọc từng ký tự của chuỗi nhập vào truyền vào biến c và xuất ra màn hình. Nếu người dùng nhập vào ký hiệu kết thúc tập tin \(end-of-file\) là tổ hợp phím ctrl-z thì vòng lặp kết thúc.
 
 b\) Hàm thành viên get\(\) với một đối số kiểu char đọc một ký tự từ luồng nhập \(kể cả ký tự trắng\) và chứa trong đối số đó. Trả vế 0 khi ký hiệu kết thúc tập tin được gặp. ngược lại trả về tham chiếu đến đối tượng istream.
@@ -188,7 +186,7 @@ bỏ qua một số ký tự được chỉ định \(mặc định là một k�
 
 ##### a. Cộng chuỗi - Hàm strcat\(\)
 
-Cú pháp: 
+Cú pháp:
 
 > **char \*strcat\(char \*des, const char \*source\)**
 
@@ -196,7 +194,7 @@ Hàm này có tác dụng ghép chuỗi nguồn vào chuỗi đích.
 
 ##### b. Xác định độ dài chuỗi - Hàm strlen\(\)
 
-Cú pháp: 
+Cú pháp:
 
 > **int strlen\(const char\* s\)**
 
@@ -204,7 +202,7 @@ Cú pháp:
 
 Hàm này được dùng để sao chép toàn bộ nội dung của chuỗi nguồn vào chuỗi đích.
 
-Cú pháp: 
+Cú pháp:
 
 > **char \*strcpy\(char \*Des, const char \*Source\)**
 
@@ -212,7 +210,7 @@ Cú pháp:
 
 Hàm này cho phép chép n ký tự đầu tiên của chuỗi nguồn sang chuỗi đích.
 
-Cú pháp: 
+Cú pháp:
 
 > **char \*strncpy\(char \*Des, const char \*Source, size\_t n\)**
 
@@ -220,7 +218,7 @@ Cú pháp:
 
 Để trích một chuỗi con của một chuỗi ký tự bắt đầu từ một ký tự được chỉ định trong chuỗi cho đến hết chuỗi, ta sử dụng hàm strchr\(\).
 
-Cú pháp : 
+Cú pháp :
 
 > **char \*strchr\(const char \*str, int c\)**
 
@@ -233,7 +231,7 @@ Ghi chú:
 
 Hàm **strstr**\(\) được sử dụng để tìm kiếm sự xuất hiện đầu tiên của chuỗi s2 trong chuỗi s1.
 
-Cú pháp: 
+Cú pháp:
 
 > **char \*strstr\(const char \*s1, const char \*s2\)**
 
@@ -259,7 +257,7 @@ Hai chuỗi s1 và s2 được so sánh với nhau, kết quả trả về là m
 
 Hàm này thực hiện việc so sánh trong num ký tự đầu tiên của 2 chuỗi s1 và s2, giữa chữ thường và chữ hoa không phân biệt.
 
-Cú pháp: 
+Cú pháp:
 
 > **int stricmp\(const char \*s1, const char \*s2, size\_t num\)**
 
@@ -269,13 +267,15 @@ Kết quả trả về tương tự như kết quả trả về của hàm strcm
 
 Hàm này được sử dụng để đặt n ký tự đầu tiên của chuỗi là ký tự c.
 
-Cú pháp: 
+Cú pháp:
 
 > **memset\(char \*Des, int c, size\_t n\)**
 
-#### 1.3.3 Đổi từ chuỗi ra số, hàm atoi\(\), atof\(\), atol\(\) \(trong &lt;cstdlib&gt;\)
+#### 1.3.3 Đổi từ chuỗi ra số
 
-Để chuyển đổi chuỗi ra số, ta sử dụng các hàm trên.
+Để chuyển đổi chuỗi ra số, ta sử dụng các hàm sau.
+
+##### Hàm atoi\(\), atof\(\), atol\(\) \(trong &lt;cstdlib&gt;\)
 
 Cú pháp :
 
