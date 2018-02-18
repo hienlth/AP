@@ -22,7 +22,7 @@ Ví dụ: Ta khai báo:
 
 nghĩa là bộ nhớ sẽ cung cấp 12+1 bytes để lưu trữ nội dung của chuỗi ký tự **Ten**; byte cuối cùng lưu trữ ký tự ‘\0’ để kết thúc chuỗi.
 
-_Ghi chú:  
+_Ghi chú:    
 _
 
 * Chiều dài tối đa của biến chuỗi là một hằng nguyên nằm trong khoảng từ 1 đến 255 bytes.
@@ -82,11 +82,11 @@ Ví dụ:
 
 Để nhập một chuỗi ký tự từ bàn phím, ta sử dụng hàm gets\(\)
 
-Cú pháp: 
+Cú pháp:
 
 > gets\(&lt;Biến chuỗi&gt;\)
 
-Ví dụ: 
+Ví dụ:
 
 > char Ten\[20\];
 >
@@ -104,25 +104,25 @@ Hiện tại Visual Studio không cho dùng gets do nó unsafe \(Dangerous Funct
 
 Trong đó:
 
-+ charPtr là con trỏ trỏ đến mảng ký tự \(tên mảng cũng là con trỏ, nhưng là con trỏ hằng\).
+* charPtr là con trỏ trỏ đến mảng ký tự \(tên mảng cũng là con trỏ, nhưng là con trỏ hằng\).
 
-+ n là số ký tự tối đa được chứa trong mảng, kể cả ký tự ‘’
+* n là số ký tự tối đa được chứa trong mảng, kể cả ký tự ‘’
 
 +delim là ký tự phân cách \(delimiter character\), mặc định là ký tự ‘\n’
 
-•	Hàm getline đọc chuỗi cho đến khi gặp ký tự phân cách, hoặc ký hiệu kết thúc tập tin \(ctrl – z\), hoặc khi số ký tự đã đọc nhỏ hơn một so với giá trị n trong đối số thứ 2. Nếu ký tự phân cách được gặp, nó được lấy ra khỏi istream và bỏ đi.
+•    Hàm getline đọc chuỗi cho đến khi gặp ký tự phân cách, hoặc ký hiệu kết thúc tập tin \(ctrl – z\), hoặc khi số ký tự đã đọc nhỏ hơn một so với giá trị n trong đối số thứ 2. Nếu ký tự phân cách được gặp, nó được lấy ra khỏi istream và bỏ đi.
 
 Ví dụ:
 
 > char name\[10\];
 >
->             cin.getline\(name, 10, ‘.’\);
+> cin.getline\(name, 10, ‘.’\);
 
 Nếu nhập : A B. C
 
 Mảng name sẽ là : A B
 
-•	Con trỏ thì phải cấp phát mới dùng được.
+•    Con trỏ thì phải cấp phát mới dùng được.
 
 ##### c. Xuất chuỗi lên màn hình
 
@@ -162,15 +162,15 @@ Ngoài ra, ta có thể sử dụng hàm cout để hiển thị chuỗi lên m�
 >
 > cin.get\(char \*charPtr, int n, char delim = ‘\n’\);
 
- 
+a\)    Hàm get\(\) không đối số, đọc một ký tự từ luồng nhập\(kể cả ký tự trắng\) và trả về ký tự này. Nếu là ký tự kết thúc tập tin thì hàm trả về EOF \(EOF có giá trị khác nhau trên những hệ thống khác nhau\).
 
-a\)	Hàm get\(\) không đối số, đọc một ký tự từ luồng nhập\(kể cả ký tự trắng\) và trả về ký tự này. Nếu là ký tự kết thúc tập tin thì hàm trả về EOF \(EOF có giá trị khác nhau trên những hệ thống khác nhau\).
+Ví dụ:
 
-            VD:
+> while\( \( c = cin.get\(\) \) != EOF\)
+>
+> > cout &lt;&lt; c;
 
-                        while\( \( c = cin.get\(\) \) != EOF\)
-
-                                    cout &lt;&lt; c;
+   
 
 Đoạn chương trình trên sẽ đọc từng ký tự của chuỗi nhập vào truyền vào biến c và xuất ra màn hình. Nếu người dùng nhập vào ký hiệu kết thúc tập tin \(end-of-file\) là tổ hợp phím ctrl-z thì vòng lặp kết thúc.
 
@@ -180,7 +180,7 @@ c\) Hàm thành viên get\(\) dạng thứ 3 hoạt động tương tự như h�
 
 ##### d. Hàm thành viên ignore\(\)
 
-            cin.ignore\(int n = 1, int delim = EOF\);
+> cin.ignore\(int n = 1, int delim = EOF\);
 
 bỏ qua một số ký tự được chỉ định \(mặc định là một ký tự\) trong luồng nhập hoặc bỏ qua cho đến khi ký tự phân cách \(mặc định là EOF\) được gặp. Mục đích là không làm ảnh hưởng các lệnh nhập tiếp theo.
 
@@ -188,43 +188,54 @@ bỏ qua một số ký tự được chỉ định \(mặc định là một k�
 
 ##### a. Cộng chuỗi - Hàm strcat\(\)
 
-Cú pháp: char \*strcat\(char \*des, const char \*source\)
+Cú pháp: 
+
+> **char \*strcat\(char \*des, const char \*source\)**
 
 Hàm này có tác dụng ghép chuỗi nguồn vào chuỗi đích.
 
 ##### b. Xác định độ dài chuỗi - Hàm strlen\(\)
 
-Cú pháp: int strlen\(const char\* s\)
+Cú pháp: 
+
+> **int strlen\(const char\* s\)**
 
 ##### c. Sao chép chuỗi, hàm strcpy\(\)
 
 Hàm này được dùng để sao chép toàn bộ nội dung của chuỗi nguồn vào chuỗi đích.
 
-Cú pháp: char \*strcpy\(char \*Des, const char \*Source\)
+Cú pháp: 
+
+> **char \*strcpy\(char \*Des, const char \*Source\)**
 
 ##### d. Sao chép một phần chuỗi, hàm strncpy\(\)
 
 Hàm này cho phép chép n ký tự đầu tiên của chuỗi nguồn sang chuỗi đích.
 
-Cú pháp: char \*strncpy\(char \*Des, const char \*Source, size\_t n\)
+Cú pháp: 
+
+> **char \*strncpy\(char \*Des, const char \*Source, size\_t n\)**
 
 ##### e. Trích một phần chuỗi, hàm strchr\(\)
 
 Để trích một chuỗi con của một chuỗi ký tự bắt đầu từ một ký tự được chỉ định trong chuỗi cho đến hết chuỗi, ta sử dụng hàm strchr\(\).
 
-Cú pháp : char \*strchr\(const char \*str, int c\)
+Cú pháp : 
+
+> **char \*strchr\(const char \*str, int c\)**
 
 Ghi chú:
 
-	Nếu ký tự đã chỉ định không có trong chuỗi, kết quả trả về là NULL.
-
-	Kết quả trả về của hàm là một con trỏ, con trỏ này chỉ đến ký tự c được tìm thấy đầu tiên trong chuỗi str.
+* Nếu ký tự đã chỉ định không có trong chuỗi, kết quả trả về là NULL.
+* Kết quả trả về của hàm là một con trỏ, con trỏ này chỉ đến ký tự c được tìm thấy đầu tiên trong chuỗi str.
 
 ##### f. Tìm kiếm nội dung chuỗi, hàm strstr\(\)
 
-Hàm strstr\(\) được sử dụng để tìm kiếm sự xuất hiện đầu tiên của chuỗi s2 trong chuỗi s1.
+Hàm **strstr**\(\) được sử dụng để tìm kiếm sự xuất hiện đầu tiên của chuỗi s2 trong chuỗi s1.
 
-Cú pháp: char \*strstr\(const char \*s1, const char \*s2\)
+Cú pháp: 
+
+> **char \*strstr\(const char \*s1, const char \*s2\)**
 
 Kết quả trả về của hàm là một con trỏ chỉ đến phần tử đầu tiên của chuỗi s1 có chứa chuỗi s2 hoặc giá trị NULL nếu chuỗi s2 không có trong chuỗi s1.
 
@@ -232,21 +243,25 @@ Kết quả trả về của hàm là một con trỏ chỉ đến phần tử �
 
 Để so sánh hai chuỗi theo từng ký tự trong bảng mã Ascii, ta có thể sử dụng hàm strcmp\(\).
 
-Cú pháp: int strcmp\(const char \*s1, const char \*s2\)
+Cú pháp:
+
+> **int strcmp\(const char \*s1, const char \*s2\)**
 
 Hai chuỗi s1 và s2 được so sánh với nhau, kết quả trả về là một số nguyên \(số này có được bằng cách lấy ký tự của s1 trừ ký tự của s2 tại vị trí đầu tiên xảy ra sự khác nhau\).
 
-- Nếu kết quả là số âm, chuỗi s1 nhỏ hơn chuỗi s2.
+* Nếu kết quả là số âm, chuỗi s1 nhỏ hơn chuỗi s2.
 
-- Nếu kết quả là 0, hai chuỗi bằng nhau.
+* Nếu kết quả là 0, hai chuỗi bằng nhau.
 
-- Nếu kết quả là số dương, chuỗi s1 lớn hơn chuỗi s2.
+* Nếu kết quả là số dương, chuỗi s1 lớn hơn chuỗi s2.
 
 ##### h. So sánh chuỗi, hàm strncmp\(\)
 
 Hàm này thực hiện việc so sánh trong num ký tự đầu tiên của 2 chuỗi s1 và s2, giữa chữ thường và chữ hoa không phân biệt.
 
-Cú pháp: int stricmp\(const char \*s1, const char \*s2, size\_t num\)
+Cú pháp: 
+
+> **int stricmp\(const char \*s1, const char \*s2, size\_t num\)**
 
 Kết quả trả về tương tự như kết quả trả về của hàm strcmp\(\)
 
@@ -254,7 +269,9 @@ Kết quả trả về tương tự như kết quả trả về của hàm strcm
 
 Hàm này được sử dụng để đặt n ký tự đầu tiên của chuỗi là ký tự c.
 
-Cú pháp: memset\(char \*Des, int c, size\_t n\)
+Cú pháp: 
+
+> **memset\(char \*Des, int c, size\_t n\)**
 
 #### 1.3.3 Đổi từ chuỗi ra số, hàm atoi\(\), atof\(\), atol\(\) \(trong &lt;cstdlib&gt;\)
 
@@ -272,19 +289,14 @@ Nếu chuyển đổi không thành công, kết quả trả về của các hà
 
 Ngoài ra, thư viện cstdlib còn hỗ trợ các hàm xử lý chuỗi khác, ta có thể đọc thêm trong phần trợ giúp.
 
-3.4	Các hàm xử lý ký tự thuộc thư viện &lt;cctype&gt;
+#### 1.3.4 Các hàm xử lý ký tự thuộc thư viện &lt;cctype&gt;
 
-•	Hàm int toupper\(int ch\) : trả về giá trị là ký tự ch đã in hoa
-
-•	Hàm int tolower\(int ch\) : trả về giá trị là ký tự ch đã in thường
-
-•	Hàm int isupper\(int ch\) : kiểm tra ký tự ch có in hoa hay không \(trả về giá trị 0 : sai, 1 : đúng\)
-
-•	Hàm int islower\(int ch\) : kiểm tra ký tự ch có in thuong hay không \(trả về giá trị 0 : sai, 1 : đúng\)
-
-•	Hàm int isalpha\(int ch\) : kiểm tra ký tự ch có phải là chữ cái hay không \(trả về giá trị 0 : sai, 1 : đúng\)
-
-•	Hàm int isdigit\(int ch\) : kiểm tra ký tự ch có phải là chữ số hay không \(trả về giá trị 0 : sai, 1 : đúng\)
+* Hàm **int toupper\(int ch\)** : trả về giá trị là ký tự ch đã in hoa
+* Hàm** int tolower\(int ch\)** : trả về giá trị là ký tự ch đã in thường
+* Hàm **int isupper\(int ch\)** : kiểm tra ký tự ch có in hoa hay không \(trả về giá trị 0 : sai, 1 : đúng\)
+* Hàm **int islower\(int ch\)** : kiểm tra ký tự ch có in thuong hay không \(trả về giá trị 0 : sai, 1 : đúng\)
+* Hàm **int isalpha\(int ch\) **: kiểm tra ký tự ch có phải là chữ cái hay không \(trả về giá trị 0 : sai, 1 : đúng\)
+* Hàm **int isdigit\(int ch\) :** kiểm tra ký tự ch có phải là chữ số hay không \(trả về giá trị 0 : sai, 1 : đúng\)
 
 Ví dụ
 
@@ -292,9 +304,7 @@ Ví dụ
 >
 > if \(!isupper\(ch\)\)
 >
->     ch = toupper\(ch\);
-
-
+> > ch = toupper\(ch\);
 
 ## 2. Bài tập
 
