@@ -1,4 +1,4 @@
-# _Chương 2: STL_
+# _Chương 3: STL_
 
 _Tham khảo thêm tại: _[http://www.cplusplus.com/reference/stl/](http://www.cplusplus.com/reference/stl/)
 
@@ -103,7 +103,7 @@ Ví dụ:
 > **vector &lt;int&gt; A  
 > ;** /\* tạo vector rỗng kiểu dữ liệu int \*/
 >
-> **vector &lt;int&gt; B\(5,777\);    
+> **vector &lt;int&gt; B\(5,777\);      
 > **/\*tạo vector với 5 phần tử là 777 \*/
 >
 > **vector &lt;int&gt; C \(B.begin\(\),B.end\(\)\)  
