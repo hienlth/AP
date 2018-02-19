@@ -96,22 +96,18 @@ Ví dụ:
 
 #### 1.4.2 Ví dụ:
 
-> /\*  Vector 1 chiều \*/
+/\*  Vector 1 chiều \*/
+
+> **vector &lt;int&gt; A;** /\* tạo vector rỗng kiểu dữ liệu int \*/
 >
-> **vector &lt;int&gt; A  
-> ;** /\* tạo vector rỗng kiểu dữ liệu int \*/
+> **vector &lt;int&gt; B\(5,777\); **/\*tạo vector với 5 phần tử là 777 \*/
 >
-> **vector &lt;int&gt; B\(5,777\);        
-> **/\*tạo vector với 5 phần tử là 777 \*/
+> **vector &lt;int&gt; C \(B.begin\(\),B.end\(\)\); **/\*lấy từ đầu đến cuối vector B \*/
 >
-> **vector &lt;int&gt; C \(B.begin\(\),B.end\(\)\)  
-> ; **/\*lấy từ đầu đến cuối vector B \*/
->
-> **  
-> vector &lt;int&gt; D\(C\);** //copy từ vector C
->
-> /\* Vector 2 chiều\*/
->
+> **vector &lt;int&gt; D\(C\);** //copy từ vector C
+
+/\* Vector 2 chiều\*/
+
 > **vector &lt; vector &lt;int&gt; &gt; v;** /\* Tạo vector 2 chiều rỗng \*/
 >
 > **vector &lt; vector &lt;int&gt; &gt; v \(5,  10\);** /\* khai báo vector 5×10 \*/
@@ -144,7 +140,7 @@ Ví dụ:
 
 ## 2. Bài tập
 
-### Bài tập 1: \(đề thi LTNC 2012\)
+### Bài tập 1:
 
 Sử dụng container vector, anh/chị hãy viết chương trình đọc vào các số nguyên, sau đó loại bỏ các số chính phương trong vector rồi xuất ra các số chẵn theo thứ tự tăng dần.
 
@@ -180,4 +176,20 @@ Yêu cầu: Xét mọi số nguyên trong dãy đã cho, nếu số đó là s�
 Dữ liệu xuất ra được ghi vào tập tin “**output.txt**”.
 
 ![](/assets/stl.PNG)
+
+### Bài tập 3:
+
+Viết hàm kiểm tra một chuỗi có phải là chuỗi đối xứng không?
+
+Viết hàm xác định số lượng từ trong một chuỗi, xuất các từ có trong chuỗi.
+
+Ví dụ:
+
+**anh yeu em em yeu anh** -&gt; _**Chuỗi đối xứng**_
+
+Số từ: **6**
+
+Các từ có trong chuỗi:** anh yeu em**
+
+
 
