@@ -23,6 +23,7 @@ Cài đặt danh sách liên kết đơn với mỗi node có kiểu dữ liệu
 17. Xóa k phần tử liên tiếp bắt đầu từ vị trí thứ i.
 18. \(\*\) In dãy con tăng dần \(liên tiếp\) dài nhất xuất hiện trong danh sách. Nếu có nhiều dãy cùng dài nhất chỉ cần in ra dãy đầu tiên.
 19. \(\*\) In ra tất cả các dãy con tăng \(liên tiếp\) của danh sách.
+20. Xóa bỏ danh sách phần tử trùng lặp \(chỉ giữ lại phần tử đầu tiên\).
 
 ## Bài tập 2:
 
