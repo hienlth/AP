@@ -1,4 +1,4 @@
-# Chương 1: Con trỏ
+# Chương 2: Con trỏ
 
 # 1. Lý thuyết
 
@@ -385,7 +385,7 @@ Viết chương trình cho người dùng nhập vào:
 
 Tính và in ra tổng số tiền lãi. Sinh viên thực hiện bằng 2 cách: rút ra công thức tính nhanh và dùng vòng lặp.
 
-**Ví dụ:          
+**Ví dụ:            
 **
 
 M = 1000000, n = 3, q = 1.15
