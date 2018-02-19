@@ -10,7 +10,7 @@ _Tham khảo thêm tại: _[http://www.cplusplus.com/reference/stl/](http://www.
 
 ### 1.2 Các loại
 
-Thư viện mẫu chuẩn STL trong C++ chia làm 4 thành phần là:
+Thư viện mẫu chuẩn STL trong C++ chia làm 3 thành phần là:
 
 #### 1.2.1 Containers Library :
 
@@ -62,9 +62,7 @@ Ví dụ:
 >
 > rit =  vector.**rend**\(\);
 
-#### 1.2.4 Numeric library
-
-### 1.3 Sử dụng
+#### 1.3 Sử dụng
 
 Để sử dụng STL, bạn cần khai báo từ khóa “**using namespace std;**” sau các khai báo thư viện \(các “\#include”, hay “\#define”,...\)
 
@@ -103,7 +101,7 @@ Ví dụ:
 > **vector &lt;int&gt; A  
 > ;** /\* tạo vector rỗng kiểu dữ liệu int \*/
 >
-> **vector &lt;int&gt; B\(5,777\);      
+> **vector &lt;int&gt; B\(5,777\);        
 > **/\*tạo vector với 5 phần tử là 777 \*/
 >
 > **vector &lt;int&gt; C \(B.begin\(\),B.end\(\)\)  
@@ -146,5 +144,40 @@ Ví dụ:
 
 ## 2. Bài tập
 
+### Bài tập 1: \(đề thi LTNC 2012\)
 
+Sử dụng container vector, anh/chị hãy viết chương trình đọc vào các số nguyên, sau đó loại bỏ các số chính phương trong vector rồi xuất ra các số chẵn theo thứ tự tăng dần.
+
+_**Hướng dẫn:**_
+
+> vector&lt;int&gt; v,v1;
+>
+> while \(cin&gt;&gt;x\) v.push\_back\(x\);
+>
+> vector&lt;int&gt;::iterator it = remove\_if\(v.begin\(\),v.end\(\),kiemtra\_sochinhphuong\);
+>
+> v.erase\(it,v.end\(\)\);  //xoa so chinh phuong
+>
+> remove\_copy\_if\(v.begin\(\),v.end\(\),v1,kiemtra\_sole\); //copy so chan vao v1
+>
+> sort\(v1.begin,v1.end\(\)\);
+>
+> ostream\_iterator&lt;int&gt; output\(cout," "\);
+>
+> copy\(v1.begin\(\),v1.end\(\),output\);
+
+### Bài tập 2:
+
+Viết chương trình hoàn chỉnh cho bài toán sau:
+
+Nhập vào một dãy số nguyên dương gồm N phần tử từ tập tin “**input.tx**t” theo cấu trúc:
+
+* Dòng đầu ghi số nguyên dương N.
+* N dòng tiếp theo, mỗi dòng ghi một số nguyên dương.
+
+Yêu cầu: Xét mọi số nguyên trong dãy đã cho, nếu số đó là số nguyên tố thì yêu cầu tính tổng các chữ số không phải là số nguyên tố của nó, ngược lại xuất -1.
+
+Dữ liệu xuất ra được ghi vào tập tin “**output.txt**”.
+
+![](/assets/stl.PNG)
 
