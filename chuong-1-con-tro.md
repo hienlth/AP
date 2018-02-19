@@ -125,16 +125,6 @@ thì cách hủy tương ứng sẽ là:
 
 ### 1.1.5 Ví dụ Con trỏ cơ bản
 
-> struct DIEM
->
-> {
->
-> > int hoanhDo, tungDo;
->
-> } ;
-
-
-
 > void main\(\)
 >
 > {
@@ -143,11 +133,7 @@ thì cách hủy tương ứng sẽ là:
 > >
 > > int a = 1;
 > >
-> > DIEM d;
-> >
-> > d.hoanhDo = 1;
-> >
-> > d.tungDo = 2;
+> > DIEM d; d.hoanhDo = 1; d.tungDo = 2;
 > >
 > > // khai bao bien con tro va tro den vung nho cua cac bien gia tri da co
 > >
@@ -256,9 +242,7 @@ Ví dụ đọc nội dung file text:
 > \#include &lt;string&gt;
 >
 > using namespace std;
-
-
-
+>
 > int main \(\) {
 >
 > string line;
@@ -389,7 +373,7 @@ Viết chương trình cho người dùng nhập vào:
 
 Tính và in ra tổng số tiền lãi. Sinh viên thực hiện bằng 2 cách: rút ra công thức tính nhanh và dùng vòng lặp.
 
-**Ví dụ:              
+**Ví dụ:                
 **
 
 M = 1000000, n = 3, q = 1.15
