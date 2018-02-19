@@ -2,7 +2,7 @@
 
 ## Bài tập 1: Phân số
 
-Khai báo kiểu dữ liệu phân số \(đặt tên là **PhanSo**\) và thực hiện các thao tác:
+Khai báo kiểu dữ liệu phân số và thực hiện các thao tác:
 
 * Nhập/Xuất phân số
 * Rút gọn phân số
@@ -14,7 +14,7 @@ Khai báo kiểu dữ liệu phân số \(đặt tên là **PhanSo**\) và thự
 
 ## Bài tập 2: Đơn thức
 
-Khai báo kiểu dữ liệu đơn thức \(đặt tên là **DonThuc**\) và thực hiện các thao tác sau:
+Khai báo kiểu dữ liệu đơn thức và thực hiện các thao tác sau:
 
 * Nhập/Xuất đơn thức
 * Tính tích, thương hai đơn thức
@@ -24,7 +24,7 @@ Khai báo kiểu dữ liệu đơn thức \(đặt tên là **DonThuc**\) và th
 
 ## Bài tập 3: Đa thức
 
-Khai báo kiểu dữ liệu đa thức \(đặt tên là **DaThuc**\) và thực hiện các thao tác sau:
+Khai báo kiểu dữ liệu đa thức và thực hiện các thao tác sau:
 
 * Nhập/Xuất đa thức
 * Tính tổng, hiệu, tích hai đa thức
@@ -34,7 +34,7 @@ Khai báo kiểu dữ liệu đa thức \(đặt tên là **DaThuc**\) và thự
 
 ## Bài tập 4: Điểm trong mặt phẳng Oxy
 
-Khai báo kiểu dữ liệu điểm \(đặt tên là **Diem**\) và thực hiện các thao tác sau:
+Khai báo kiểu dữ liệu điểm và thực hiện các thao tác sau:
 
 * Nhập/Xuất tọa độ điểm
 * Tính khoảng cách giữa hai điểm
@@ -43,11 +43,22 @@ Khai báo kiểu dữ liệu điểm \(đặt tên là **Diem**\) và thực hi�
 
 ## Bài tập 5: Tam giác
 
-Khai báo kiểu dữ lịêu tam giác \(đặt tên là **TamGiac**\) và thực hiện các thao tác sau:
+Khai báo kiểu dữ lịêu tam giác và thực hiện các thao tác sau:
 
 * Nhập/Xuất tam giác
 * Tính chu vi, diện tích tam giác
 * Kiểm tra tam giác cân/đều/vuông.
+
+## Bài tập 6:  Ngày
+
+Khai báo kiểu dữ liệu ngày và thực hiện các thao tác sau:
+
+* Nhập/Xuất ngày \(ngày, tháng, năm\)
+* Kiểm tra năm nhuận
+* Tính số thứ tự ngày trong năm
+* Tìm ngày trước đó, sau đó k ngày
+* Tính khoảng cách giữa hai ngày
+* So sánh hai ngày
 
 
 
