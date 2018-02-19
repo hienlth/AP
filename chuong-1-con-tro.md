@@ -132,7 +132,9 @@ thì cách hủy tương ứng sẽ là:
 > > int hoanhDo, tungDo;
 >
 > } ;
->
+
+
+
 > void main\(\)
 >
 > {
@@ -254,7 +256,9 @@ Ví dụ đọc nội dung file text:
 > \#include &lt;string&gt;
 >
 > using namespace std;
->
+
+
+
 > int main \(\) {
 >
 > string line;
@@ -385,7 +389,7 @@ Viết chương trình cho người dùng nhập vào:
 
 Tính và in ra tổng số tiền lãi. Sinh viên thực hiện bằng 2 cách: rút ra công thức tính nhanh và dùng vòng lặp.
 
-**Ví dụ:            
+**Ví dụ:              
 **
 
 M = 1000000, n = 3, q = 1.15
