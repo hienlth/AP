@@ -1,4 +1,4 @@
-# Chương 5: Danh sách liên kết
+# Chương 6: Danh sách liên kết
 
 ## Bài tập 1:
 
