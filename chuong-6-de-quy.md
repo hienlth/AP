@@ -1,4 +1,4 @@
-# Chương 6: Đệ quy
+# Chương 7: Đệ quy
 
 ## 1. Lý thuyết
 
