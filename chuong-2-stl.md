@@ -167,9 +167,8 @@ Ví dụ:
 
 **anh yeu em em yeu anh** -&gt; _**Chuỗi đối xứng**_
 
-Số từ: **6  
-**
+Số từ: **6 **
 
-Các từ có trong chuỗi:** anh yeu em  
+Các từ có trong chuỗi:** anh yeu em    
 **
 
