@@ -111,3 +111,13 @@ Bài toán **mã đi tuần**
 
 Bài toán **8 con hậu**.
 
+### Bài tập 11:
+
+Nhập số nguyên dương N. Sử dụng đệ quy tính in dãy nhị phân của số N đó.
+
+### Bài tập 12:
+
+ Tính Sin\(x\) dựa vào công thức sau: 
+
+![](/assets/sinx.PNG)
+
