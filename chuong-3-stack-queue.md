@@ -1,4 +1,4 @@
-# Chương 3: STL Stack, Queue
+# Chương 4: STL Stack, Queue
 
 ## 1. Stack {#stack}
 
