@@ -68,8 +68,6 @@ Ví dụ:
 
 Ví dụ:
 
-> \#include &lt;iostream&gt;
->
 > \#include &lt;stack&gt;       //khai  báo sử dụng container stack
 >
 > \#define N  100
@@ -144,24 +142,6 @@ Ví dụ:
 
 Sử dụng container vector, anh/chị hãy viết chương trình đọc vào các số nguyên, sau đó loại bỏ các số chính phương trong vector rồi xuất ra các số chẵn theo thứ tự tăng dần.
 
-_**Hướng dẫn:**_
-
-> vector&lt;int&gt; v,v1;
->
-> while \(cin&gt;&gt;x\) v.push\_back\(x\);
->
-> vector&lt;int&gt;::iterator it = remove\_if\(v.begin\(\),v.end\(\),kiemtra\_sochinhphuong\);
->
-> v.erase\(it,v.end\(\)\);  //xoa so chinh phuong
->
-> remove\_copy\_if\(v.begin\(\),v.end\(\),v1,kiemtra\_sole\); //copy so chan vao v1
->
-> sort\(v1.begin,v1.end\(\)\);
->
-> ostream\_iterator&lt;int&gt; output\(cout," "\);
->
-> copy\(v1.begin\(\),v1.end\(\),output\);
-
 ### Bài tập 2:
 
 Viết chương trình hoàn chỉnh cho bài toán sau:
@@ -187,9 +167,9 @@ Ví dụ:
 
 **anh yeu em em yeu anh** -&gt; _**Chuỗi đối xứng**_
 
-Số từ: **6**
+Số từ: **6  
+**
 
-Các từ có trong chuỗi:** anh yeu em**
-
-
+Các từ có trong chuỗi:** anh yeu em  
+**
 
