@@ -1,4 +1,4 @@
-## Chương 4: CHUỖI
+## Chương 5: CHUỖI
 
 ## 1. Lý thuyết
 
@@ -22,7 +22,7 @@ Ví dụ: Ta khai báo:
 
 nghĩa là bộ nhớ sẽ cung cấp 12+1 bytes để lưu trữ nội dung của chuỗi ký tự **Ten**; byte cuối cùng lưu trữ ký tự ‘\0’ để kết thúc chuỗi.
 
-_Ghi chú:      
+_Ghi chú:        
 _
 
 * Chiều dài tối đa của biến chuỗi là một hằng nguyên nằm trong khoảng từ 1 đến 255 bytes.
