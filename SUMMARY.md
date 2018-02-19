@@ -8,5 +8,4 @@
 * [Chương 5: Chuỗi](chuong-3-chuoi.md)
 * [Chương 6: Danh sách Liên kết](chuong-5-danh-sach-lien-ket.md)
 * [Chương 7: Đệ quy](chuong-6-de-quy.md)
-* [Ôn tập](on-tap.md)
 
