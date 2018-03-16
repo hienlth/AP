@@ -16,3 +16,5 @@ Trân trọng cảm ơn.
 
 ![](/assets/HIENLTH_2016.png)
 
+Đọc online: [https://hienlth.gitbooks.io/lap-trinh-nang-cao/](https://hienlth.gitbooks.io/lap-trinh-nang-cao/), [PDF file](https://www.gitbook.com/download/pdf/book/hienlth/lap-trinh-nang-cao).
+
